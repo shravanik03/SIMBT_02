@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h1>TODO LIST</h1>
+            <div class="searching">
+                <input type="text" class="to-do-input" placeholder="What do you want to do.?">
+                <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="main-list-section">
+                <div class="tab-icons">
+                    <button id="btn-pending" class="tab-links pending-btn active-link"><i class="fa-solid fa-clipboard-list t-icon"></i></button>
+                    <button id="btn-complete" class="tab-links complete-btn"><i class="fa-regular fa-calendar-check t-icon"></i></button>
+                </div>
+                <div class="to-do-list" id="pending">
+                    <p class="to-do-heading">PENDING</p>
+                </div>
+                <div class="to-do-list" id="completed">
+                    <p class="to-do-heading">COMPLETED</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/4f52b70ee0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

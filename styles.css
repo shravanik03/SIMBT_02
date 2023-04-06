@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(31, 8, 52);
+    font-family: 'Playfair Display', serif;
+    color: white;
+    overflow-x : hidden;
+}
+
+#wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    gap:1rem
+}
+
+h1{
+    color:rgb(94, 47, 139);
+    font-size: 2.5rem;
+    font-weight:bold;
+    letter-spacing: 0.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.list{
+    color:rgb(243, 243, 239);
+}
+
+.container{
+    margin-top: 1.3rem;
+    width: 480px;
+    padding: 20px;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    background-color:#fff;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.main-list-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.searching{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap:0.4rem;
+}
+
+.searching .to-do-input{
+    padding: 0.5rem 1rem;
+    height: 50px;
+    outline: none;
+    border: none;
+    width: 390px;
+    font-size: 1.15rem;
+    margin: 0.25rem;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+}
+
+.searching .add-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: rgb(120, 41, 194);
+    color: #fff;
+    margin: 0.2px;
+    cursor: pointer;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.add-btn i{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.add-btn.activate-btn{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.to-do-list{
+    width: 100%;
+}
+
+.to-do-heading{
+    color: #6726bc;
+    font-size: 1.3rem;
+    line-height: 0.8rem;
+    height: auto;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.item{
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(187, 161, 230);
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item-input{
+    background: none;
+    outline: none;
+    border: none;
+    font-size:1.2rem;
+    width: 95%;
+    font-weight: 500;
+    color: #332841;
+}
+
+.item-btns{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-btns button{
+    outline: none;
+    border: none;
+    background-color: rgb(187, 161, 230);
+    cursor: pointer;
+}
+
+.item-btns i{
+    color: rgb(65, 11, 116);
+    font-size: 1.2rem;
+}
+
+.del-btn{
+    outline: none;
+    border: none;
+    background-color: rgb(187, 161, 230);
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.del-btn i{
+    color: rgb(65, 11, 116);
+    font-size: 1.2rem;
+}
+
+.tab-icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: rgb(248, 247, 250);
+    margin-bottom: 2rem;
+}
+
+
+.tab-icons button{
+    width: 100%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1.4rem;
+    font-size: 1.15rem;
+    background-color: rgb(248, 247, 250);
+}
+
+.tab-icons button:hover{
+    background-color: rgb(226, 223, 232);
+}
+
+.tab-icons .active-link{
+    background-color: rgb(226, 223, 232);
+}
+
+.t-icon{
+    font-size: 1.7rem;
+    text-align: center;
+    align-items: center;
+    color: rgb(85, 12, 152);
+}
+
+#completed{
+    display: none;
+}
